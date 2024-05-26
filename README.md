@@ -1,2 +1,3 @@
 # essential-ui
-A minimalist component library
+
+A minimalist cross-platform web components library

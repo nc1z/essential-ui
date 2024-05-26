@@ -1,0 +1,30 @@
+/* Per-instance theming: https://lit.dev/docs/components/styles/#theming */
+
+:host {
+  display: inline-flex;
+}
+
+.base-button {
+  cursor: pointer;
+  padding: var(--e-button-padding, 10px 20px);
+  margin: var(--e-button-margin, 0px);
+  font-size: var(--e-button-font-size, 16px);
+  background-color: var(--e-button-background-color, none);
+  color: var(--e-button-color, black);
+  border: var(--e-button-border, 1px solid black);
+  border-radius: var(--e-button-border-radius, 2px);
+}
+
+.base-button:hover {
+  background-color: var(--e-button-background-color-hover, black);
+  color: var(--e-button-color-hover, white);
+}
+
+.base-button:active {
+  background-color: var(--e-button-background-color-active, #1f1f1e);
+  color: var(--e-button-color-active, white);
+}
+
+.override {
+  all: initial;
+}

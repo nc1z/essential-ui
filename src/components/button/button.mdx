@@ -1,16 +1,8 @@
-import { Meta } from "@storybook/web-components";
-import { html } from "lit";
+import { Canvas, Meta } from '@storybook/blocks';
 
-<Meta
-  title="Button"
-  parameters={{
-    docs: {
-      description: {
-        component: "An example of a custom button component.",
-      },
-    },
-  }}
-/>
+import * as buttonStories from './button.stories';
+
+<Meta of={buttonStories} />
 
 # Button
 
@@ -23,17 +15,71 @@ Here's an example of how to use the `e-button` component:
 # Customizable CSS
 The e-button component provides customizable CSS variables for theming. Here are the available variables:
 
-| CSS Variable                      | Description                              | Default Value   |
-| ----------------------------- | ---------------------------------------- | --------------- |
-| --e-button-padding            | Padding of the button                    | 10px 20px       |
-| --e-button-margin             | Margin of the button                     | 0px             |
-| --e-button-font-size          | Font size of the button                  | 16px            |
-| --e-button-background-color   | Background color of the button           | none            |
-| --e-button-color              | Text color of the button                 | black           |
-| --e-button-border             | Border of the button                     | 1px solid black |
-| --e-button-border-radius      | Border radius of the button              | 2px             |
-| --e-button-background-color-hover | Background color of the button on hover | black           |
-| --e-button-color-hover        | Text color of the button on hover        | white           |
-| --e-button-background-color-active | Background color of the button when active | #1f1f1e    |
-| --e-button-color-active       | Text color of the button when active     | white           |
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+      <th>Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>--e-button-padding</td>
+      <td>Padding of the button</td>
+      <td>10px 20px</td>
+    </tr>
+    <tr>
+      <td>--e-button-margin</td>
+      <td>Margin of the button</td>
+      <td>0px</td>
+    </tr>
+    <tr>
+      <td>--e-button-font-size</td>
+      <td>Font size of the button</td>
+      <td>16px</td>
+    </tr>
+    <tr>
+      <td>--e-button-background-color</td>
+      <td>Background color of the button</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>--e-button-color</td>
+      <td>Text color of the button</td>
+      <td>black</td>
+    </tr>
+    <tr>
+      <td>--e-button-border</td>
+      <td>Border of the button</td>
+      <td>1px solid black</td>
+    </tr>
+    <tr>
+      <td>--e-button-border-radius</td>
+      <td>Border radius of the button</td>
+      <td>2px</td>
+    </tr>
+    <tr>
+      <td>--e-button-background-color-hover</td>
+      <td>Background color of the button on hover</td>
+      <td>black</td>
+    </tr>
+    <tr>
+      <td>--e-button-color-hover</td>
+      <td>Text color of the button on hover</td>
+      <td>white</td>
+    </tr>
+    <tr>
+      <td>--e-button-background-color-active</td>
+      <td>Background color of the button when active</td>
+      <td>#1f1f1e</td>
+    </tr>
+    <tr>
+      <td>--e-button-color-active</td>
+      <td>Text color of the button when active</td>
+      <td>white</td>
+    </tr>
+  </tbody>
+</table>
+
 
